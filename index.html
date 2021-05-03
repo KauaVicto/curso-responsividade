@@ -4,6 +4,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="print.css" media="print">
   </head>
   <body>
     <header>
@@ -12,7 +14,7 @@
           src="./images/logo-rocketseat.svg"
           alt="Rocketseat"
         />
-        <div class="menu-section on">
+        <div class="menu-section">
           <div class="menu-toggle">
             <div class="one"></div>
             <div class="two"></div>
@@ -62,8 +64,16 @@
     <main>
       <section class="cards">
         <div class="card">
+          <!-- 
+            <picture class="image" alt="Imagem">
+            <source media="(min-width: 768px)" srcset="https://i.ytimg.com/vi/GykTLqODQuU/maxresdefault.jpg">
+            <source media="(min-width: 320px)" srcset="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg">
+            <source media="(min-width: 10px)" srcset="https://i.ytimg.com/vi/GykTLqODQuU/mqdefault.jpg">
+            
+          </picture>
+          -->
           <div class="image">
-            <img src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg" />
+            <img src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg" alt="Imagem"/>
           </div>
           <div class="content">
             <p class="title text--medium">
@@ -136,5 +146,6 @@
     </div>
 
     <script src="scripts.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>

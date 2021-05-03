@@ -21,4 +21,19 @@ Textos fluidos
 `em` - Multiplicado pelo pai
 `rem` - multiplicado pelo root
 
-## 
+## Media Queries
+
+```css
+    @media (max-width: 320px) {
+        #form h3{
+            font-size: 2rem;
+        }
+    }
+```
+
+## HTML Media Attrib.
+
+## Images
+`<picture>`
+
+PNG, JPG vs SVG

@@ -225,8 +225,8 @@ MODAL
   
   background-color: #fff;
   
-  width: 800px;
-  height: 400px;
+  width: 95%;
+  height: 95%;
   
   margin: 0 auto;
   padding: 10px;
@@ -399,6 +399,10 @@ FORM
   }
 
   /* Fullscreen */
+  .menu-section{
+    position: absolute;
+    right: 0;
+  }
   .menu-section.on{
     position: absolute;
     top: 0;
@@ -410,6 +414,9 @@ FORM
     background-color: #7159c1;
 
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .menu-section.on nav{
@@ -434,8 +441,20 @@ FORM
   .menu-section.on nav ul{
     text-align: center;
     display: block;
+    width: 90vw;
+  }
+  .menu-section.on nav ul li{
   }
   .menu-section.on nav ul a{
-    
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem;
+    display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  #form h3{
+    font-size: 2rem;
   }
 }
